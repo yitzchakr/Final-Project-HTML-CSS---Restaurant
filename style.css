@@ -27,6 +27,10 @@ main{
    flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
   
    
 }
@@ -54,4 +58,47 @@ main{
     display: flex;
    width: 500px;
     justify-content: space-between;
+}
+.menu_link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 300px;
+    border: 1px solid black;
+}
+.menu_img{
+    flex: 1;
+    max-width: 50%;
+    overflow: hidden;
+}
+.menu_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-container{
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+}
+.about-container{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+.link_of_main{
+    color: aliceblue;
+    font-size: 40px;
 }
