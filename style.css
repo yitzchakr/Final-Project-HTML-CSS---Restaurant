@@ -1,4 +1,9 @@
 
+body{
+ margin: 0;
+ height: 100vh;   
+ overflow: hidden;
+}
 
 .logo-container{
     display: flex;
@@ -7,12 +12,18 @@
     justify-content: center;
 }
 
+.scrollable{
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+ 
+}
 
 .photos{
     display: flex;
-    
-    justify-content: space-between;
+  
+    justify-content: space-around;
     flex-wrap: wrap;
+  
 }
 .main-photos{
 
@@ -20,7 +31,7 @@
     box-sizing: border-box;
    width: 300px;
    height: 200px;
-   
+     padding: 5px;
 }
 main{
     display: flex;
@@ -40,19 +51,27 @@ main{
  
 }
 .top-nav{
-    position: fixed;
+    
     width: 100%;
     display: flex;
     justify-content: space-around;
-    
-    
+    height: 50px;
+    z-index: 100;
+    align-items: center;
+    background-color:blue
    
 }
 .top-nav a{
-    width: 99%;
-    
-    font-size: larger;;
+    width: auto;
+    background-color: ;
+    color: antiquewhite;
+    font-size: larger;
+    padding: 15px;
    
+}
+.top-nav a:hover{
+    background-color: white;
+    color: #000;
 }
 .left-buttons{
     display: flex;
