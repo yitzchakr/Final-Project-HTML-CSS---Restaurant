@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reserve_style.css">
+    <title>Resevervations</title>
+</head>
+
+<body>
+    <h1 class="header">הזמנת שולחן</h1>
+    <form action="" method="post" id="res-form">
+        <div class="form-body">
+            <label for="first_name">שם פרטי</label>
+            <input type="text" class="first_name" >
+            <label for="last_name"> שם משפחה</label>
+            <input type="text" class="last_name" required>
+            <label for="seats" >  מקומות (עד 40)</label>
+            <input type="number" class="seats" min="1" max="40" required>
+            <label for="day">תאריך</label>
+            <input type="date" required>
+            <label for="time">שעה</label>
+            <input type="time" min="08:00" max="23:00" required>
+            <label for="submit" class="submit"></label>
+            <input type="submit" value="Reserve" class="submit" >
+            
+
+        </div>
+    </form>
+</body>
+
+</html>
