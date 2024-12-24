@@ -5,7 +5,9 @@ CSS styling for about page
   padding: 0;
   box-sizing: border-box;
 }
-
+.logo-link{
+  height: 50px;
+}
 body {
   font-family: 'Frank Ruhl Libre', serif;
   background: #1a1a1a;
