@@ -1,9 +1,21 @@
+:root{
+    
+    --standard-font-color:#c1a35f;
+    --main-font: 'Frank Ruhl Libre', serif;
+}
+
 .form-body{
-    display: flex;
+    display:flex;
     flex-direction: column;
-   
-   
+    align-items: center;
+    padding: 20px;
+    height: 80vh;
   
+}
+body{
+    background-color: rgb(56, 53, 53);
+    color: var(--standard-font-color);
+   
 }
 .form-body label{
     padding-top: 20px;
@@ -11,7 +23,19 @@
    
 }
 .header{
-    text-align: center;
+    display: flex;
+    
+    align-items: center;
+    background-color: black;
+    margin: 0;
+    height: 10vh;
+}
+.header h1{
+    margin-right: 40%;
+}
+.logo-link{
+    height: 50px;
+    
 }
 input,label{
     width: 200px;
@@ -21,10 +45,20 @@ input,label{
 input:user-invalid{
     outline: 2px solid red;
 }
-.submit{
-    margin-top: 30px;
-    align-self: center;
-    width: 150px;
+.submit {
+    margin-top: 20%;
     font-size: large;
-   
+    color: var(--standard-font-color);
+    background-color: black;
+    width: 150px;
+    padding: 5px;
+    border-radius: 2px;
+    
 }
+.submit:hover{
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+

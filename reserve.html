@@ -9,21 +9,25 @@
 </head>
 
 <body>
-    <h1 class="header">הזמנת שולחן</h1>
+    <div class="header">
+    
+    <a href="index.html"><img src="images/logo_steak_house.png" alt="דף הבית" class="logo-link" ></a>
+    <h1 >הזמנת שולחן</h1>
+    </div>
     <form action="" method="post" id="res-form">
         <div class="form-body">
             <label for="first_name">שם פרטי</label>
-            <input type="text" class="first_name" >
+            <input type="text" id="first_name" >
             <label for="last_name"> שם משפחה</label>
-            <input type="text" class="last_name" required>
+            <input type="text" id="last_name" required>
             <label for="seats" >  מקומות (עד 40)</label>
-            <input type="number" class="seats" min="1" max="40" required>
-            <label for="day">תאריך</label>
-            <input type="date" required>
+            <input type="number" id="seats" min="1" max="40" required>
+            <label for="date">תאריך</label>
+            <input id="date" type="date" required>
             <label for="time">שעה</label>
-            <input type="time" min="08:00" max="23:00" required>
-            <label for="submit" class="submit"></label>
-            <input type="submit" value="Reserve" class="submit" >
+            <input id= time type="time" min="08:00" max="23:00" required>
+            
+            <input type="submit" value="הזמן" class="submit" >
             
 
         </div>
