@@ -172,7 +172,7 @@ main {
     
 }
 
-
+.top-nav a{
     width: auto;
   
     color: var(--standard-font-color);
@@ -223,7 +223,7 @@ main {
     overflow:visible;
     margin-top: 5%;
     display: flex;
-    animation: slide 20s linear infinite;
+    animation: slide 60s linear infinite;
     animation-delay:3s;
     z-index: 100;
 }
