@@ -14,20 +14,17 @@ body {
 .scrollable {
     height: calc(100vh - 60px);
     overflow-y: auto;
+    overflow-x: hidden;
 
 }
 
 .photos {
     display: flex;
-
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
 
 .main-photos {
-
-
     box-sizing: border-box;
     width: 300px;
     height: 200px;
@@ -42,19 +39,14 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-
-
-
 }
 
 .description {
     font-size: larger;
     text-align: justify;
-
 }
 
 .top-nav {
-
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -64,43 +56,26 @@ main {
     background-color: blue
 }
 
-.top-nav a {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.top-nav a{
     width: auto;
     background-color: ;
     color: antiquewhite;
     font-size: larger;
     padding: 15px;
-
 }
 
-.top-nav a:hover {
+.top-nav a:hover{
     background-color: white;
     color: #000;
 }
 
-.left-buttons {
+.left-buttons{
     display: flex;
     width: 500px;
     justify-content: space-between;
 }
 
-.menu_link {
+.menu_link{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -110,19 +85,19 @@ main {
     border: 1px solid black;
 }
 
-.menu_img {
+.menu_img{
     flex: 1;
     max-width: 50%;
     overflow: hidden;
 }
 
-.menu_img img {
+.menu_img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.text-container {
+.text-container{
     flex: 1;
     max-width: 50%;
     padding: 20px;
@@ -132,7 +107,7 @@ main {
     justify-content: center;
 }
 
-.about-container {
+.about-container{
     display: block;
     align-items: center;
     justify-content: space-between;
@@ -144,22 +119,26 @@ main {
     color: aliceblue;
 }
 
-.link_of_main {
+.link_of_main{
     color: aliceblue;
     font-size: 40px;
 }
 
-.img-container {
-    width: 100%;
+.img-container{
+    width: fit-content;
     overflow:visible;
-    white-space: nowrap;
     margin-top: 5%;
-    position: relative;
     display: flex;
-    animation: slide 25s linear infinite;
+    animation: slide 20s linear infinite;
+    animation-delay:3s;
+    z-index: 100;
+}
+.img-container:hover {
+    animation-play-state: paused;
+
 }
 
-.img-container img {
+.img-container img{
     display: inline-block;
     height: 20rem;
     width: auto;
@@ -167,19 +146,22 @@ main {
     border-radius: 1rem;
     margin: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
-  
 }
-
 .img-container img:hover{
     transform: scale(1.07);
+    
 } 
 
 @keyframes slide {
     0% {
-        transform: translateX(0);
-    }
+        transform: translate3d(10px, 0, 0px);
+      }
 
-    100% {
-        transform: translateX(100%);
-    }
+      100% {
+        transform: translate3d(91.8%, 0, 0px);
+      }
+    
+
+    
+
 }
