@@ -3,36 +3,69 @@
     --standard-font-color:#c1a35f;
     --main-font: 'Frank Ruhl Libre', serif;
 }
+main{
+    display: flex;
+    justify-content: center;
+   
+}
+form h1{
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+  border-bottom: #c1a35f solid 1px;
+  padding: 10px 0 ;
+  background-color: black;
+  margin-top: 0%;
+}
+.form-wrapper{
+ border: 2px solid var(--standard-font-color);
+ border-radius: 3px;
+ background-color: rgb(56, 53, 53);
+ margin-top: 10px;
+
+}
 
 .form-body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    height: 80vh;
-  
+    padding: 0 40px 40px 40px;
+    height: 74vh;
+    
+   justify-content: space-around;
+   
+    
+    
+    
 }
 body{
-    background-color: rgb(56, 53, 53);
+    background-color: rgb(89,83,83);
     color: var(--standard-font-color);
+    margin: 0;
    
 }
 .form-body label{
-    padding-top: 20px;
+    
     font-size: larger;
    
 }
+.logo-link{
+    margin-right: 30px;
+    display: block;
+}
+.logo-link:hover{
+    transform: scale(1.5);
+}
 .header{
-    display: flex;
-    
+    display:flex;
+    justify-content: space-between;
     align-items: center;
     background-color: black;
     margin: 0;
     height: 10vh;
+    border-bottom: 3px solid var(--standard-font-color);
 }
-.header h1{
-    margin-right: 40%;
-}
+
 .logo-link{
     height: 50px;
     
@@ -46,12 +79,13 @@ input:user-invalid{
     outline: 2px solid red;
 }
 .submit {
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: large;
     color: var(--standard-font-color);
     background-color: black;
     width: 150px;
     padding: 5px;
+   
     border-radius: 2px;
     
 }

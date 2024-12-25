@@ -12,10 +12,14 @@
     <div class="header">
     
     <a href="index.html"><img src="images/logo_steak_house.png" alt="דף הבית" class="logo-link" ></a>
-    <h1 >הזמנת שולחן</h1>
+    
     </div>
+    <main>
     <form action="" method="post" id="res-form">
+        <section class="form-wrapper">
+         <h1 >הזמנת שולחן</h1>
         <div class="form-body">
+           
             <label for="first_name">שם פרטי</label>
             <input type="text" id="first_name" >
             <label for="last_name"> שם משפחה</label>
@@ -26,12 +30,15 @@
             <input id="date" type="date" required>
             <label for="time">שעה</label>
             <input id= time type="time" min="08:00" max="23:00" required>
+            <label for="phone">טלפון</label>
+            <input type="tel" name="phone" id="phone" required minlength="9">
             
             <input type="submit" value="הזמן" class="submit" >
             
-
+        </section>
         </div>
     </form>
+</main>
 </body>
 
 </html>
