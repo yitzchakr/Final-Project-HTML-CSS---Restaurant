@@ -102,16 +102,7 @@ main {
     object-fit: cover;
 }
 
-.text-container {
-    flex: 1;
-    text-shadow: 0 0 5px black;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: large;
-    text-align: justify;
-    justify-content: center;
-}
+
 
 .about-container {
     display: block;
@@ -204,8 +195,9 @@ main {
     width: 500px;
     justify-content: space-between;
 }
-
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 .text-container {
@@ -215,12 +207,17 @@ main {
     font-size: 1.5rem;
     text-align: center;
     justify-content: center;
+    text-shadow: 0 0 5px black;
 }
+
 
 .text-container a {
     color: black;
     font-weight: bolder;
     font-size: 2rem;
+    text-shadow: none;
+    border: 3px solid black;
+    text-decoration: none;
 }
 
 
