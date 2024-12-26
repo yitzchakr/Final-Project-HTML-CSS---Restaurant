@@ -200,6 +200,7 @@ html{
 }
 
 
+
 .text-container {
     flex: 1;
     padding: 20px;
@@ -280,6 +281,7 @@ html{
 
     .logo {
         width: 80%;
+        height: auto;
     }
 
     .text-container {
@@ -288,6 +290,10 @@ html{
 
     .text-container p {
         display: flex;
+    }
+    .img-container img{
+        height: 10rem;
+        width: auto;
     }
 
 }

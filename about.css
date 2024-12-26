@@ -63,6 +63,7 @@ p {
 
   .about-container {
     padding: 1rem;
+    text-align: justify;
   }
 
   h1 {
