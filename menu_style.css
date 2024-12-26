@@ -54,7 +54,7 @@ ul {
   gap: 2rem;
   padding: 1rem;
   margin: 1rem 0;
-  border-bottom: 1px solid #c1a35f;
+  border-bottom: 2px solid #c1a35f;
   list-style: none;
 }
 
@@ -95,7 +95,7 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  
+  text-align: center;
 }
 
 section>div {
@@ -172,10 +172,6 @@ h3 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
-
   ul {
     align-items: center;
     gap: 1rem;
@@ -194,6 +190,13 @@ h3 {
 
   section {
     padding: 1rem;
+  }
+  section>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    
   }
 }
 
